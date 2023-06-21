@@ -1,4 +1,4 @@
-package org.javatechie.stringpalindrome;
+package com.javatechie.StringPalindrome;
 
 /**
  * Hello world!
