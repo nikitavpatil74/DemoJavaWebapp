@@ -4,27 +4,41 @@ package com.javatechie.StringPalindrome;
  * Hello world!
  *
  */
-public class App {
+public class Palindrome {
 
-	public boolean isPalindrome(String input) {
+    public static void main(String[] args) {
 
-		if (input == null) {
-			throw new IllegalArgumentException("input shouldn't be null");
-		}
+        Palindrome palindrome = new Palindrome();
 
-		if (input.equals(reverse(input))) {
-			return true;
-		} else {
-			return false;
-		}
-	}
+        String input = "Poor Dan is in a droop";
 
-	private String reverse(String input) {
-		String rev = "";
-		for (int i = input.length() - 1; i >= 0; i--) {
-			rev = rev + input.charAt(i);
-		}
-		return rev;
-	}
+        if (palindrome.isPalindrome(input))
+            System.out.println("\"" + input + "\" is a palindrome.");
+        else
+            System.out.println("\"" + input + "\" is not a palindrome.");
+
+    }
+
+    boolean isPalindrome(String input) {
+
+        //Converting input to Lowercase and removing all white spaces
+        input = input.toLowerCase().replaceAll("\\s+", "");
+
+        //Length of input
+        int length = input.length();
+
+        //Check if non alpha-numeric string
+        if (!input.matches("^([a-z0-9]+)?$")) {
+            return false;
+        }
+
+        //Character by character comparision
+        for (int i = 0; i < length / 2; i++) {
+            if (input.charAt(i) != input.charAt(length - i - 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
 
 }
