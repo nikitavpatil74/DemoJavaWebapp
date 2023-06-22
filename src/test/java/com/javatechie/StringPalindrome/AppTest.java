@@ -28,6 +28,11 @@ public class AppTest {
 		assertEquals(expected, app.isPalindrome("a"));
 	}
 
+	@Test
+	public void isPlaindromeEmptyStringTest() {
+		assertEquals(expected, app.isPalindrome(""));
+	}
+
 
 	@Test(expected = IllegalArgumentException.class)
 	public void isNotPlaindromeExceptionTest() {
