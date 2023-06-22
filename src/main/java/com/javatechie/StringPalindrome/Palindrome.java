@@ -8,9 +8,9 @@ public class Palindrome {
         String input = "Poor Dan is in a droop";
 
         if (palindrome.isPalindrome(input))
-            System.out.println("\"" + input + "\" is a palindrome.");
+            logger.log("\"" + input + "\" is a palindrome.");
         else
-            System.out.println("\"" + input + "\" is not a palindrome.");
+            logger.log("\"" + input + "\" is not a palindrome.");
 
     }
 
