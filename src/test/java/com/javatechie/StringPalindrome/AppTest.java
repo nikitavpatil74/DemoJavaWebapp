@@ -31,7 +31,7 @@ public class AppTest {
 	@Test(expected = NullPointerException.class)
         public void nullStringTest() throws Exception {
 
-        palindrome.isPalindrome(null);
+        app.isPalindrome(null);
 
     }
 
