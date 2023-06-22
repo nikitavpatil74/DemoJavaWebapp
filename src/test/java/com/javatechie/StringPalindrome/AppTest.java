@@ -28,5 +28,12 @@ public class AppTest {
 		assertEquals(false, app.isPalindrome(null));
 	}
 
+	@Test
+	public void isPalindromeTest() {
+		string input = "level";
+		boolean expected =true;
+		assertEquals(expected, app.isPalindrome(input));
+		
+	}
        
 }
