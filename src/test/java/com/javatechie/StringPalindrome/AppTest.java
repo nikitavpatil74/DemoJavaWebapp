@@ -23,6 +23,14 @@ public class AppTest {
 		assertEquals(false, app.isPalindrome("abc"));
 	}
 
+	@Test
+	public void isPlaindromeTest() {
+		string input = "level";
+		boolean expected = true;
+		assertEquals(expected, app.isPalindrome(input1));
+	}
+
+
 	@Test(expected = IllegalArgumentException.class)
 	public void isNotPlaindromeExceptionTest() {
 		assertEquals(false, app.isPalindrome(null));
