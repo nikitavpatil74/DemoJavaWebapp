@@ -24,10 +24,10 @@ public class AppTest {
 	}
 
 	@Test
-	public void isPlaindromeTest() {
-		string input = "level";
+	public void isPlaindromeSingleCharacterTest() {
+		string input = "a";
 		boolean expected = true;
-		assertEquals(expected, app.isPalindrome(input1));
+		assertEquals(expected, app.isPalindrome(input));
 	}
 
 
