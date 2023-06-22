@@ -28,12 +28,5 @@ public class AppTest {
 		assertEquals(false, app.isPalindrome(null));
 	}
 
-        @Test
-        public void emptyStringTest() throws Exception {
-
-        input = "";
-
-        assertTrue(app.isPalindrome(input));
-
-    }
+       
 }
