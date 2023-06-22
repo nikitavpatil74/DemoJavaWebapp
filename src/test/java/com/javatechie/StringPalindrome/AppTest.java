@@ -27,7 +27,7 @@ public class AppTest {
 	public void isPlaindromeSingleCharacterTest() {
 		string input = "a";
 		boolean expected = true;
-		assertEquals(expected, app.isPalindrome(input));
+		assertEquals(expected, app.isPalindrome(input1));
 	}
 
 
