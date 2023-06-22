@@ -19,7 +19,7 @@
 
     <build>
       
-      <finalName>demojavawebapp</finalName>
+      <finalName>Demojavawebapp</finalName>
               <plugins>
 			<plugin>
 				<groupId>org.jacoco</groupId>
