@@ -28,4 +28,11 @@ public class AppTest {
 		assertEquals(false, app.isPalindrome(null));
 	}
 
+	@Test(expected = NullPointerException.class)
+        public void nullStringTest() throws Exception {
+
+        palindrome.isPalindrome(null);
+
+    }
+
 }
